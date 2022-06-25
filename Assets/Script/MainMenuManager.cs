@@ -5,6 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour
 {
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
+    public void HowToPlay()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
+
     public void PlayGame()
     {
         SceneManager.LoadScene("Game");
@@ -15,15 +25,6 @@ public class MainMenuManager : MonoBehaviour
         SceneManager.LoadScene("GameOver");
     }
 
-    public void HowToPlay()
-    {
-        SceneManager.LoadScene("Tutorial");
-    }
-
-    public void MainMenu()
-    {
-        SceneManager.LoadScene("Main Menu");
-    }
 
     public void QuitGame()
     {

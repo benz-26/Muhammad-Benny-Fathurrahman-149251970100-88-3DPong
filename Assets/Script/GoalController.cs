@@ -8,14 +8,13 @@ public class GoalController : MonoBehaviour
     public bool player1, player2, player3, player4;
     public ScoreManager manager;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider collison)
     {
-        if (other == ball)
+        if (collison == ball)
         {
             if (player1)
             {
                 manager.AddP1Score(1);
-                Debug.Log("P1");
             }
             if (player2)
             {
@@ -24,7 +23,6 @@ public class GoalController : MonoBehaviour
             if (player3)
             {
                 manager.AddP3Score(1);
-                Debug.Log("P3");
             }
             if (player4)
             {

@@ -39,24 +39,24 @@ public class BallController : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider collison)
     {
-        if (other == gawang1)
+        if (collison == gawang1)
         {
             managerScore.AddP1Score(1);
             manager.RemoveBall(gameObject);
         }
-        if (other == gawang2)
+        if (collison == gawang2)
         {
             managerScore.AddP2Score(1);
             manager.RemoveBall(gameObject);
         }
-        if (other == gawang3)
+        if (collison == gawang3)
         {
             managerScore.AddP3Score(1);
             manager.RemoveBall(gameObject);
         }
-        if (other == gawang4)
+        if (collison == gawang4)
         {
             managerScore.AddP4Score(1);
             manager.RemoveBall(gameObject);
